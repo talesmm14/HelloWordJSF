@@ -7,9 +7,18 @@
 </h:head>
 <h:body>
 	<h1>Hello, world!</h1>
-	<h:outputLabel value="Olá." />
-	<br></br>
-	<h:inputText value="teste"></h:inputText>
-	<h:button value="OK"></h:button>
-	</h:body>
+
+	<h1>Acesso</h1>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="Login:" />
+		<h:inputText value="#{helloWorldController.login}" />
+
+		<h:outputLabel value="Senha:" />
+		<h:inputText value="#{helloWorldController.senha}" />
+
+		<h:commandButton value="Entrar" />
+		<h:commandButton value="Limpar" />
+	</h:panelGrid>
+
+</h:body>
 </html>
